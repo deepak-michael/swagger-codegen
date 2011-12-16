@@ -1,6 +1,7 @@
-package $packageName$ {
+package com.wordnik.swagger.common {
 
-import com.wordnik.swagger.api.*;
+import $apiPackageName$.*;
+import $modelPackageName$.*;
 
 $imports:{ import |
 import $import$;

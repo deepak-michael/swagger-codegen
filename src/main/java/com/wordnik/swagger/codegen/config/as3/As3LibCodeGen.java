@@ -139,8 +139,10 @@ public class As3LibCodeGen extends LibraryCodeGenerator{
         template.setAttribute("annotationPackageName", languageConfig.getAnnotationPackageName());
         template.setAttribute("extends", config.getDefaultModelBaseClass());
         template.setAttribute("className", referencesModel.getGenratedClassName());
-        template.setAttribute(PACKAGE_NAME, config.getModelPackageName());
-        File aFile = new File(languageConfig.getModelClassLocation()+referencesModel.getGenratedClassName()+languageConfig.getClassFileExtension());
+        template.setAttribute("modelPackageName", config.getModelPackageName());
+        template.setAttribute("apiPackageName", config.getApiPackageName());
+        File aFile = new File(languageConfig.getLibraryHome() + "/src/main/as3/com/wordnik/swagger/common/" +
+                referencesModel.getGenratedClassName() + languageConfig.getClassFileExtension());
         writeFile(aFile, template.toString(), "Model class");
     }
 }

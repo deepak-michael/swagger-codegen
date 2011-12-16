@@ -6,7 +6,7 @@ package com.wordnik.swagger.common
 	import com.wordnik.swagger.event.ApiClientEvent;
 	import com.wordnik.swagger.event.Response;
 	import com.wordnik.swagger.common.ApiUserCredentials;
-	import com.wordnik.swagger.model.LibraryReferences;
+	import com.wordnik.swagger.common.LibraryReferences;
 
 	import flash.events.EventDispatcher;
 	import flash.utils.Dictionary;
